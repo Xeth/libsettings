@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libsettings
+Description: Generic app settings library
+URL: https://github.com/xeth/libsettings
+Version: @LIBSETTINGS_VERSION_MAJOR@.@LIBSETTINGS_VERSION_MINOR@.@LIBSETTINGS_VERSION_PATCH@
+Libs: -L${libdir} -lsettings
+Cflags: -I${includedir}
